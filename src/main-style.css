@@ -110,7 +110,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .nav-btn:hover {
-    border-color: rgba(0,0,0,0.2);
+    border-color: var(--border3);
     box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
     transition-duration: 0.1s;
     transition-delay: 0s;
@@ -160,6 +160,31 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 1,5vw;
 }
 
+.about-contacts {
+    display: flex;
+    width: 70px;
+    font-weight: 600;
+    transition-duration: 0.1s;
+}
+
+.btn-contacts {
+    width: 200px;
+    padding: 0em 1.5em;
+    margin-right: 2em;
+    margin-top: 0.5em;
+    border: var(--border2);
+    font-weight: 600;
+    border-radius: 0.25em;
+    transition-duration: 0.1s;
+}
+
+.btn-contacts:hover {
+    border-color: rgba(0,0,0,0.2);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+    transition-duration: 0.1s;
+    transition-delay: 0s;
+}
+
 .picture-me {
     display: flex;
     flex-shrink: 1;
@@ -167,6 +192,7 @@ h1,h2,h3,h4,h5,h6 {
     max-height: 250px;
     height: auto;
     padding: 0em 2em;
+    border-radius: 50%;
 }
 
 
@@ -202,10 +228,10 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     background-color: rgb(255, 255, 255);
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     width: 270px;
-    height: 375px;
+    max-height: 350px;
     border: var(--border2);
     border-radius: 6px;
     padding: 2em 0;
@@ -262,15 +288,16 @@ h1,h2,h3,h4,h5,h6 {
 .skill-description1, .skill-description2, .skill-description3 {
     display: none;
     opacity: 0;
-    padding: 2em 2em 1.5em 3em;
+    padding: 2em 2em 0em 3em;
     color: rgba(0,0,0,0.6);
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
+    font-size: 0.75vw;
 }
 
 .skill-content1:hover, .skill-content2:hover, .skill-content3:hover {
     border-color: rgba(0,0,0,0.2);
     box-shadow: 0 4px 12px rgb(0 0 0 / 20%);
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
     transition-delay: 0s;
 }
 
